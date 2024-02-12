@@ -12,7 +12,8 @@
     * vector_search_text_column: str
 5. Run the driver-notebook
 
-Features: 
+
+## Features
 
 * supports Q&A with Sources
 * streaming with FM apis
