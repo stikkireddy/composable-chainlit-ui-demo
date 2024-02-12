@@ -3,9 +3,9 @@
 ## Usage
 
 1. clone the repo
-2. Use a single user cluster
-3. modify config file
-4. Only the following fields are required in `config.yaml`
+2. Use a single user cluster (only tested on 14.3 LTS ML and 13.3 LTS)
+3. modify the following [config file](./config.yaml)
+4. Only the following fields are **required** in `config.yaml`
     * prompt_with_history_str: str
     * vector_search_endpoint_name: str
     * vector_search_index_name: str
