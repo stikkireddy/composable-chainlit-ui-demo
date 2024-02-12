@@ -349,6 +349,7 @@ class ChatBot:
         guard_resp = await self._aguard(history)
         if config.prompt_guard_str is not None and guard_resp is not None:
             # short circuit
+            await response.stream_token(config.prompt_guard_failed_response_str)
             return guard_resp
 
         processed_context = await cl.make_async(relevant_question_chain_prompt.invoke)(history, {
