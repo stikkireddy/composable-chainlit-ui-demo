@@ -1,0 +1,8 @@
+databricks-vectorsearch==0.22
+langchain-community
+databricks-genai-inference
+langchain==0.0.347
+databricks-sdk
+pandas
+chainlit
+mlflow-skinny
