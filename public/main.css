@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+a[href*='https://github.com/Chainlit/chainlit'] {
+    visibility: hidden;
+}
+
+a[href*='/readme'] {
+    visibility: hidden;
+}
+
+header.MuiAppBar-root a[href*='/'] {
+    visibility: hidden;
+}
+
+* {
+    font-family: "DM Sans", sans-serif !important;
+}
