@@ -1,7 +1,6 @@
 [project]
 # Whether to enable telemetry (default: true). No personal data is collected.
-enable_telemetry = true
-
+enable_telemetry = false
 
 # List of environment variables to be provided by each user to use the app.
 user_env = []
@@ -11,9 +10,6 @@ session_timeout = 3600
 
 # Enable third parties caching (e.g LangChain cache)
 cache = false
-
-# Authorized origins 
-allow_origins = ["*"]
 
 # Follow symlink for asset mount (see https://github.com/Chainlit/chainlit/issues/317)
 # follow_symlink = false
@@ -29,7 +25,7 @@ unsafe_allow_html = false
 latex = false
 
 # Authorize users to upload files with messages
-multi_modal = true
+multi_modal = false
 
 # Allows user to use speech to text
 [features.speech_to_text]
@@ -39,10 +35,10 @@ multi_modal = true
 
 [UI]
 # Name of the app and chatbot.
-name = "Chatbot"
+name = "Databricks NRF Gen AI Demo"
 
-# Show the readme while the thread is empty.
-show_readme_as_default = true
+# Show the readme while the conversation is empty.
+show_readme_as_default = false
 
 # Description of the app and chatbot. This is used for HTML tags.
 # description = ""
@@ -62,19 +58,16 @@ hide_cot = false
 # Specify a CSS file that can be used to customize the user interface.
 # The CSS file can be served from the public directory or via an external link.
 # custom_css = "/public/test.css"
-
-# Specify a custom font url.
-# custom_font = "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+custom_css = "/public/main.css"
 
 # Override default MUI light theme. (Check theme.ts)
-[UI.theme]
-    #font_family = "Inter, sans-serif"
 [UI.theme.light]
     #background = "#FAFAFA"
     #paper = "#FFFFFF"
 
     [UI.theme.light.primary]
         #main = "#F80061"
+        main = "#12262e"
         #dark = "#980039"
         #light = "#FFE7EB"
 
@@ -90,4 +83,4 @@ hide_cot = false
 
 
 [meta]
-generated_by = "1.0.200"
+generated_by = "0.7.700"
