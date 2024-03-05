@@ -353,8 +353,12 @@ class ChatBot:
             return guard_resp
 
         processed_context = await cl.make_async(relevant_question_chain_prompt.invoke)(history, {
-            "callbacks": [cl.LangchainCallbackHandler()]
+            "callbacks": [cl.LangchainCallbackHandler(
+                # stream_final_answer=True,
+                to_ignore=["RunnablePassthrough", "RunnableSequence"]
+            )]
         })
+        
         processed_prompt = processed_context["prompt"]
         msgs = [{"content": msg.content, "role": "user"} for msg in processed_prompt.to_messages()]
 
