@@ -1,6 +1,7 @@
 # Databricks notebook source
 # MAGIC %pip install -r requirements.txt
 # MAGIC %pip install dbtunnel[chainlit,asgiproxy]
+# MAGIC %pip install chainlit==1.0.400
 # MAGIC dbutils.library.restartPython()
 
 # COMMAND ----------
